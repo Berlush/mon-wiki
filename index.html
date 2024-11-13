@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Interne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div>
+    <h2>Base de Connaissance</h2>
+    <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Rechercher...">
+</div>
+
+<table id="knowledgeTable">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Étiquettes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Chargement caisson OBS</td>
+            <td><span class="tag red">Chargement</span> <span class="tag gray">OBS</span></td>
+        </tr>
+        <tr>
+            <td>Chargement caisson ATK</td>
+            <td><span class="tag red">Chargement</span> <span class="tag gray">ATK</span></td>
+        </tr>
+        <tr>
+            <td>Fiche de tâche OBS</td>
+            <td><span class="tag yellow">Fiche de tâche</span> <span class="tag gray">OBS</span></td>
+        </tr>
+        <tr>
+            <td>GDO - Prévention des risques liés à la toxicité des fumées</td>
+            <td><span class="tag green">GDO</span> <span class="tag blue">Fumées</span> <span class="tag dark-green">HPI</span></td>
+        </tr>
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
